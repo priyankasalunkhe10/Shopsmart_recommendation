@@ -3,8 +3,7 @@ from database import Base
 
 class Product(Base):
     __tablename__ = 'products'
-
-    product_id = Column(Integer, primary_key=True, index=True)
-    name = Column(String(100))
-    description = Column(String(100))
+    product_id = Column(Integer, primary_key=True)
+    name = Column(String(200))
+    category = Column(String(500))
     price = Column(Float)
