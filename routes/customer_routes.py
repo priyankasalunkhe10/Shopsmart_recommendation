@@ -20,7 +20,7 @@ def add_customer():
 
 @router.route('/customers',methods = ['GET'])
 def get_all():
-    db = SessionLocal
+    db = SessionLocal()
     customers = db.query(Customer).all()
     db.close()
     return jsonify([
@@ -43,7 +43,8 @@ def get_by_id(customer_id):
             "customer_id": customer.customer_id,
             "name": customer.name,
             "email": customer.email,
-            "phone_number": customer.phone_number
+            "phone_no": customer.phone_no,
+            "location":customer.location
         })
     return jsonify({"error": "Customer not found"}), 404
 
@@ -58,7 +59,8 @@ def update(customer_id):
     data = request.json
     customer.name = data.get('name', customer.name)
     customer.email = data.get('email', customer.email)
-    customer.phone_number = data.get('phone_number', customer.phone_number)
+    customer.phone_no = data.get('phone_no', customer.phone_no)
+    customer.location = data.get('location',customer.location)
 
     db.commit()
     db.refresh(customer)
@@ -67,13 +69,14 @@ def update(customer_id):
         "customer_id": customer.customer_id,
         "name": customer.name,
         "email": customer.email,
-        "phone_number": customer.phone_number
+        "phone_no": customer.phone_no,
+        "location": customer.location
     })
 
-@router.route('/customers/<int:id>', methods=['DELETE'])
-def delete_customer(id):
+@router.route('/customers/<int:customer_id>', methods=['DELETE'])
+def delete_customer(customer_id):
     db = SessionLocal()
-    customer = db.query(Customer).get(id)
+    customer = db.query(Customer).get(customer_id)
     if not customer:
         db.close()
         return jsonify({"error": "Customer not found"}), 404
