@@ -1,4 +1,6 @@
-from flask import Flask
+from flask import Flask,jsonify,request
+import pickle
+import pandas as pd
 from database import Base,engine
 from routes import customer_routes
 from routes import product_routes
@@ -8,41 +10,38 @@ import models.customer
 import models.product
 import models.transaction
 
-from routes.recommend_routes import get_recommend_blueprint
+with open('ML_model/location_product_counts.pkl', 'rb') as f:
+    location_product_counts = pickle.load(f)
 
 app=Flask(__name__)
-
-import pickle
-
-with open('ML_model/recommendation_model.pkl', 'rb') as f:
-    model_data = pickle.load(f)
-
-knn_location = model_data['knn_location']
-knn_purchase = model_data['knn_purchase']
-similarity_matrix = model_data['similarity_matrix']
-location_vectorizer = model_data['location_vectorizer']
-product_vectorizer = model_data['product_vectorizer']
-user_item_matrix = model_data['user_item_matrix']
-df_product = model_data['df_product']
-df_customer = model_data['df_customer']
-df_transaction = model_data['df_transaction']
-
-recommend_bp = get_recommend_blueprint(
-    knn_location, knn_purchase, similarity_matrix,
-    location_vectorizer, product_vectorizer,
-    user_item_matrix, df_product, df_customer, df_transaction
-)
 
 Base.metadata.create_all(bind=engine)
 
 app.register_blueprint(customer_routes.router)
 app.register_blueprint(product_routes.router)
 app.register_blueprint(transaction_routes.router)
-app.register_blueprint(recommend_bp)
 
 @app.route('/')
 def home():
     return "Shopsmart API is running"
+
+def recommend_products_by_location(location, top_n=5):
+    filtered = location_product_counts[location_product_counts['location'].str.lower() == location.lower()]
+    filtered = filtered.sort_values(by='purchase_count', ascending=False)
+    return filtered[['product_id', 'name']].head(top_n).to_dict(orient='records')
+
+@app.route('/recommend/<string:location>', methods=['GET'])
+def recommend(location):
+    
+    if not location:
+        return jsonify({'error': 'Location not provided'}), 400
+
+    recommendations = recommend_products_by_location(location)
+
+    if not recommendations:
+        return jsonify({'message': f'No recommendations found for location: {location}'}), 404
+
+    return jsonify({'location': location, 'recommendations': recommendations})
 
 if __name__=='__main__':
     app.run(debug=True)

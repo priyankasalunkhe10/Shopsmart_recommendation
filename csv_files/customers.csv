@@ -198,3 +198,53 @@ customer_id,name,email,phone_no,location
 198,Dishani Choudhury,ptaneja@gmail.com,7971775170,Sambhal
 199,Armaan Mallick,sulelavanya@ray.net,3755037589,Bharatpur
 200,Farhan Bava,gardesumer@sura.net,1027261493,Jamshedpur
+201,TestCustomer0,test0@example.com,9000000000,Bhilai
+202,TestCustomer1,test1@example.com,9000000001,Davanagere
+203,TestCustomer2,test2@example.com,9000000002,Jamnagar
+204,TestCustomer3,test3@example.com,9000000003,Tirupati
+205,TestCustomer4,test4@example.com,9000000004,Sambhal
+206,TestCustomer5,test5@example.com,9000000005,Surendranagar Dudhrej
+207,TestCustomer6,test6@example.com,9000000006,Solapur
+208,TestCustomer7,test7@example.com,9000000007,Sambhal
+209,TestCustomer8,test8@example.com,9000000008,Srikakulam
+210,TestCustomer9,test9@example.com,9000000009,Bharatpur
+211,TestCustomer10,test10@example.com,9000000010,Sambhal
+212,TestCustomer11,test11@example.com,9000000011,Bharatpur
+213,TestCustomer12,test12@example.com,9000000012,Tirupati
+214,TestCustomer13,test13@example.com,9000000013,Sambhal
+215,TestCustomer14,test14@example.com,9000000014,Jamnagar
+216,TestCustomer15,test15@example.com,9000000015,Tirupati
+217,TestCustomer16,test16@example.com,9000000016,Solapur
+218,TestCustomer17,test17@example.com,9000000017,Sambhal
+219,TestCustomer18,test18@example.com,9000000018,Jamnagar
+220,TestCustomer19,test19@example.com,9000000019,Jodhpur
+221,TestCustomer20,test20@example.com,9000000020,Jodhpur
+222,TestCustomer21,test21@example.com,9000000021,Mehsana
+223,TestCustomer22,test22@example.com,9000000022,Bharatpur
+224,TestCustomer23,test23@example.com,9000000023,Giridih
+225,TestCustomer24,test24@example.com,9000000024,Phagwara
+226,TestCustomer25,test25@example.com,9000000025,Sambhal
+227,TestCustomer26,test26@example.com,9000000026,Tirupati
+228,TestCustomer27,test27@example.com,9000000027,Solapur
+229,TestCustomer28,test28@example.com,9000000028,Gangtok
+230,TestCustomer29,test29@example.com,9000000029,Pallavaram
+231,TestCustomer30,test30@example.com,9000000030,Tirupati
+232,TestCustomer31,test31@example.com,9000000031,Srikakulam
+233,TestCustomer32,test32@example.com,9000000032,Solapur
+234,TestCustomer33,test33@example.com,9000000033,Jalgaon
+235,TestCustomer34,test34@example.com,9000000034,Bhiwani
+236,TestCustomer35,test35@example.com,9000000035,Jamshedpur
+237,TestCustomer36,test36@example.com,9000000036,Pallavaram
+238,TestCustomer37,test37@example.com,9000000037,Jalgaon
+239,TestCustomer38,test38@example.com,9000000038,Jamshedpur
+240,TestCustomer39,test39@example.com,9000000039,Giridih
+241,TestCustomer40,test40@example.com,9000000040,Jamnagar
+242,TestCustomer41,test41@example.com,9000000041,Sambhal
+243,TestCustomer42,test42@example.com,9000000042,Jamshedpur
+244,TestCustomer43,test43@example.com,9000000043,Jodhpur
+245,TestCustomer44,test44@example.com,9000000044,Jalgaon
+246,TestCustomer45,test45@example.com,9000000045,Jamshedpur
+247,TestCustomer46,test46@example.com,9000000046,Pallavaram
+248,TestCustomer47,test47@example.com,9000000047,Jalgaon
+249,TestCustomer48,test48@example.com,9000000048,Bikaner
+250,TestCustomer49,test49@example.com,9000000049,Gangtok
