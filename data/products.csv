@@ -1,0 +1,201 @@
+product_id,name,category,price
+1,Power Bank 176,Accessories,1005.23
+2,WiFi Router 811,Networking,601.98
+3,Smartwatch 169,Wearables,493.93
+4,WiFi Router 987,Networking,924.48
+5,Portable SSD 382,Storage,1424.35
+6,LED Monitor 567,Computers,1160.32
+7,Electric Toothbrush 142,Health & Personal Care,1364.24
+8,Home Assistant 484,Smart Home,410.23
+9,Gaming Console 899,Gaming,1189.25
+10,Graphics Card 197,Computers,835.52
+11,Tablet 834,Mobile,1318.78
+12,Graphics Card 890,Computers,1322.39
+13,Digital Camera 199,Cameras,890.07
+14,WiFi Router 125,Networking,128.7
+15,Tablet 345,Mobile,470.09
+16,WiFi Router 208,Networking,488.75
+17,Bluetooth Speaker 160,Audio,1238.1
+18,Drone 447,Cameras,199.76
+19,Digital Camera 796,Cameras,1064.32
+20,Electric Toothbrush 465,Health & Personal Care,1247.78
+21,Mechanical Keyboard 764,Accessories,1467.46
+22,Bluetooth Speaker 212,Audio,1025.39
+23,Bluetooth Speaker 256,Audio,168.92
+24,Portable SSD 993,Storage,922.06
+25,Fitness Tracker 271,Wearables,1084.7
+26,Smart TV 679,TV & Home Entertainment,992.24
+27,LED Monitor 949,Computers,874.45
+28,Mechanical Keyboard 248,Accessories,409.3
+29,Tablet 978,Mobile,97.28
+30,Wireless Earbuds 491,Audio,282.71
+31,Tablet 262,Mobile,1062.64
+32,Mechanical Keyboard 724,Accessories,1320.79
+33,WiFi Router 275,Networking,528.44
+34,Power Bank 935,Accessories,1329.07
+35,Home Assistant 209,Smart Home,1464.34
+36,Smart TV 558,TV & Home Entertainment,383.02
+37,Laptop 602,Computers,1398.74
+38,Power Bank 660,Accessories,1196.46
+39,Smartphone 641,Mobile,575.7
+40,Mechanical Keyboard 584,Accessories,502.27
+41,Smartwatch 796,Wearables,380.7
+42,Smart TV 131,TV & Home Entertainment,615.01
+43,Smartphone 348,Mobile,1049.24
+44,WiFi Router 974,Networking,1141.61
+45,Drone 795,Cameras,1141.35
+46,Smartphone 770,Mobile,1136.54
+47,Smart TV 563,TV & Home Entertainment,504.3
+48,Smartwatch 240,Wearables,574.72
+49,Smart TV 772,TV & Home Entertainment,1213.03
+50,Home Assistant 119,Smart Home,494.75
+51,VR Headset 807,Gaming,781.3
+52,Portable SSD 346,Storage,619.01
+53,LED Monitor 756,Computers,1229.73
+54,Bluetooth Speaker 413,Audio,853.75
+55,WiFi Router 519,Networking,875.82
+56,LED Monitor 390,Computers,366.19
+57,Smartphone 171,Mobile,1498.85
+58,Smartphone 417,Mobile,1166.34
+59,WiFi Router 606,Networking,518.09
+60,Graphics Card 436,Computers,1211.91
+61,Laptop 893,Computers,489.62
+62,VR Headset 108,Gaming,847.59
+63,Electric Toothbrush 253,Health & Personal Care,1211.89
+64,Portable SSD 544,Storage,1233.9
+65,WiFi Router 832,Networking,1231.38
+66,Home Assistant 494,Smart Home,1452.13
+67,Graphics Card 261,Computers,467.39
+68,Digital Camera 120,Cameras,1298.69
+69,Electric Toothbrush 453,Health & Personal Care,1135.33
+70,Drone 184,Cameras,643.22
+71,Graphics Card 923,Computers,1074.11
+72,Graphics Card 160,Computers,1316.46
+73,LED Monitor 196,Computers,655.29
+74,Tablet 656,Mobile,1232.9
+75,Digital Camera 622,Cameras,116.36
+76,Bluetooth Speaker 316,Audio,711.21
+77,LED Monitor 394,Computers,980.1
+78,Drone 565,Cameras,669.04
+79,Portable SSD 172,Storage,514.28
+80,Smartwatch 812,Wearables,1393.54
+81,Digital Camera 597,Cameras,99.52
+82,Smart TV 236,TV & Home Entertainment,213.23
+83,Bluetooth Speaker 812,Audio,676.01
+84,Bluetooth Speaker 341,Audio,528.71
+85,Bluetooth Speaker 740,Audio,475.55
+86,WiFi Router 402,Networking,1249.34
+87,Portable SSD 127,Storage,1043.93
+88,Smartphone 771,Mobile,211.35
+89,Portable SSD 861,Storage,1134.72
+90,Power Bank 308,Accessories,653.0
+91,Bluetooth Speaker 125,Audio,1357.97
+92,Laptop 971,Computers,625.26
+93,Portable SSD 137,Storage,750.09
+94,Drone 237,Cameras,1455.58
+95,Smart TV 680,TV & Home Entertainment,977.15
+96,VR Headset 167,Gaming,1453.13
+97,Smart TV 977,TV & Home Entertainment,189.36
+98,Bluetooth Speaker 703,Audio,1014.22
+99,Smartphone 585,Mobile,938.73
+100,Drone 137,Cameras,998.59
+101,Smart TV 650,TV & Home Entertainment,671.25
+102,Smartwatch 290,Wearables,746.33
+103,Drone 694,Cameras,645.76
+104,Electric Toothbrush 775,Health & Personal Care,1324.76
+105,Smartwatch 947,Wearables,1264.09
+106,Drone 279,Cameras,1137.54
+107,Portable SSD 120,Storage,1472.88
+108,Power Bank 525,Accessories,1397.55
+109,LED Monitor 788,Computers,892.58
+110,VR Headset 412,Gaming,1102.92
+111,Smartwatch 515,Wearables,239.33
+112,Digital Camera 403,Cameras,1081.2
+113,Drone 965,Cameras,508.21
+114,VR Headset 243,Gaming,795.66
+115,Tablet 494,Mobile,1220.87
+116,Graphics Card 779,Computers,120.58
+117,Laptop 156,Computers,829.37
+118,Fitness Tracker 743,Wearables,191.37
+119,Power Bank 908,Accessories,441.25
+120,VR Headset 892,Gaming,826.24
+121,Graphics Card 165,Computers,1463.4
+122,Portable SSD 914,Storage,473.36
+123,Electric Toothbrush 710,Health & Personal Care,1180.65
+124,Bluetooth Speaker 405,Audio,458.9
+125,Power Bank 218,Accessories,56.09
+126,VR Headset 507,Gaming,1189.68
+127,Graphics Card 993,Computers,1259.52
+128,Electric Toothbrush 730,Health & Personal Care,990.24
+129,Wireless Earbuds 387,Audio,981.08
+130,Smartwatch 535,Wearables,87.0
+131,Fitness Tracker 587,Wearables,990.69
+132,Mechanical Keyboard 593,Accessories,1472.58
+133,Fitness Tracker 628,Wearables,877.72
+134,Graphics Card 214,Computers,948.18
+135,LED Monitor 790,Computers,528.71
+136,Tablet 134,Mobile,674.67
+137,VR Headset 938,Gaming,445.93
+138,LED Monitor 716,Computers,510.88
+139,VR Headset 163,Gaming,243.88
+140,Fitness Tracker 625,Wearables,1020.52
+141,Wireless Earbuds 953,Audio,532.5
+142,Digital Camera 728,Cameras,951.17
+143,Graphics Card 560,Computers,1230.93
+144,LED Monitor 146,Computers,961.45
+145,Power Bank 116,Accessories,593.26
+146,Graphics Card 966,Computers,959.49
+147,Smart TV 392,TV & Home Entertainment,1103.64
+148,Laptop 590,Computers,1448.1
+149,Drone 277,Cameras,1262.67
+150,Bluetooth Speaker 128,Audio,1375.68
+151,Tablet 649,Mobile,1145.72
+152,Smartphone 772,Mobile,328.82
+153,Bluetooth Speaker 969,Audio,1249.41
+154,Portable SSD 891,Storage,528.63
+155,Graphics Card 213,Computers,137.96
+156,Home Assistant 986,Smart Home,712.25
+157,Mechanical Keyboard 343,Accessories,996.31
+158,Tablet 714,Mobile,305.48
+159,Laptop 563,Computers,538.31
+160,Bluetooth Speaker 709,Audio,79.92
+161,Power Bank 487,Accessories,666.76
+162,Wireless Earbuds 357,Audio,951.38
+163,Smartwatch 202,Wearables,1073.84
+164,Smartwatch 309,Wearables,159.36
+165,Smart TV 290,TV & Home Entertainment,1491.13
+166,Fitness Tracker 506,Wearables,452.53
+167,VR Headset 165,Gaming,1135.1
+168,Power Bank 235,Accessories,72.04
+169,Tablet 126,Mobile,1029.28
+170,Laptop 968,Computers,1047.03
+171,WiFi Router 909,Networking,314.06
+172,Power Bank 650,Accessories,1380.05
+173,Portable SSD 925,Storage,709.41
+174,Digital Camera 241,Cameras,559.45
+175,Fitness Tracker 498,Wearables,765.94
+176,Graphics Card 894,Computers,1184.3
+177,Electric Toothbrush 246,Health & Personal Care,1228.68
+178,Smart TV 972,TV & Home Entertainment,1477.03
+179,VR Headset 863,Gaming,122.65
+180,Smartwatch 404,Wearables,742.09
+181,Mechanical Keyboard 775,Accessories,1157.04
+182,Drone 943,Cameras,1380.43
+183,Wireless Earbuds 612,Audio,115.61
+184,Mechanical Keyboard 393,Accessories,1000.34
+185,Portable SSD 146,Storage,822.42
+186,Wireless Earbuds 587,Audio,941.56
+187,Home Assistant 416,Smart Home,165.55
+188,Wireless Earbuds 583,Audio,850.51
+189,Wireless Earbuds 183,Audio,1152.88
+190,LED Monitor 949,Computers,483.27
+191,Mechanical Keyboard 277,Accessories,138.2
+192,VR Headset 891,Gaming,132.49
+193,LED Monitor 501,Computers,215.54
+194,Mechanical Keyboard 862,Accessories,675.01
+195,Wireless Earbuds 825,Audio,1455.35
+196,Portable SSD 754,Storage,677.16
+197,Tablet 143,Mobile,806.99
+198,WiFi Router 201,Networking,1048.29
+199,VR Headset 615,Gaming,891.97
+200,Gaming Console 332,Gaming,162.07
