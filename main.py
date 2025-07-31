@@ -1,19 +1,12 @@
-from flask import Flask,jsonify,request
-import pickle
-import pandas as pd
-from database import Base,engine
+from flask import Flask, jsonify, request
+from database import engine, SessionLocal, Base
 from routes import customer_routes
 from routes import product_routes
 from routes import transaction_routes
+from models.customer import Customer
+from recommender_utils import recommend_by_customer_id
 
-import models.customer
-import models.product
-import models.transaction
-
-with open('ML_model/location_product_counts.pkl', 'rb') as f:
-    location_product_counts = pickle.load(f)
-
-app=Flask(__name__)
+app = Flask(__name__)
 
 Base.metadata.create_all(bind=engine)
 
@@ -25,23 +18,47 @@ app.register_blueprint(transaction_routes.router)
 def home():
     return "Shopsmart API is running"
 
-def recommend_products_by_location(location, top_n=5):
-    filtered = location_product_counts[location_product_counts['location'].str.lower() == location.lower()]
-    filtered = filtered.sort_values(by='purchase_count', ascending=False)
-    return filtered[['product_id', 'name']].head(top_n).to_dict(orient='records')
+@app.route('/login', methods=['POST'])
+def login():
+    data = request.get_json()
+    customer_id = data.get("customer_id")
 
-@app.route('/recommend/<string:location>', methods=['GET'])
-def recommend(location):
-    
-    if not location:
-        return jsonify({'error': 'Location not provided'}), 400
+    if not customer_id:
+        return jsonify({"error": "customer_id is required"}), 400
 
-    recommendations = recommend_products_by_location(location)
+    db = SessionLocal()
+    customer = db.query(Customer).filter_by(customer_id=customer_id).first()
+    db.close()
 
+    if not customer:
+        return jsonify({"error": "Customer not found"}), 404
+
+    return jsonify({
+        "customer_id": customer.customer_id,
+        "name": customer.name,
+        "email": customer.email,
+        "phone_no": customer.phone_no,
+        "location": customer.location
+    })
+
+@app.route('/recommend', methods=['POST'])
+def recommend():
+    data = request.get_json()
+    customer_id = data.get('customer_id')
+
+    if not customer_id:
+        return jsonify({'error': 'customer_id is required'}), 400
+
+    try:
+        customer_id = int(customer_id)
+    except ValueError:
+        return jsonify({'error': 'customer_id must be an integer'}), 400
+
+    recommendations = recommend_by_customer_id(customer_id)
     if not recommendations:
-        return jsonify({'message': f'No recommendations found for location: {location}'}), 404
+        return jsonify({'message': 'No recommendations found'}), 404
 
-    return jsonify({'location': location, 'recommendations': recommendations})
+    return jsonify({'recommendations': recommendations})
 
-if __name__=='__main__':
+if __name__ == '__main__':
     app.run(debug=True)
